@@ -1,4 +1,4 @@
-# Компонент поиска
+# Задание для стажировки
 
 ## Как запустить проект
 
@@ -14,46 +14,33 @@ npm install
 npm run dev
 ```
 
-## Задания
-
-- проверить и поправить функциональность (сейчас выведены mock данные, поиск не работает).
-  На ввод в поисковую строку должен идти запрос к api для поиска пользователя.
-  Для запроса к api используйте fetch api.
-- реализовать поиск пользователей со стороннего ресурса https://dummyjson.com/users/search?q=John
-  q - это поисковый запрос
-- покрыть типизацией (будет плюсом)
-- подумать над оптимизациями приложения (будет плюсом)
-
-Предусмотрите все нюансы (обработка ошибок, оптимизация работы с сетью и т.д.), которые вы знаете и все потенциальные нештатные ситуации, но не тратьте на это слишком много времени (1-4 часа).
-Удачи!
-
 ## Результат
 
-- функциональность поправлена(после ввода данных идет запрс к api и возвращается список пользователей; использовался await fetch для запроса, сам запрос происходит в папке services, файл api_service); также компоненты покрыты типизацией.
+- реализовано 2 компонента: CatFactComponent(отправка запроса на `https://catfact.ninja/fact` для получения факта) и AgePredictionComponent(для ввода имени и поиска возраста), для выполнения запросов реализован компонент api_service.
 
 ## Внешний вид стартовой страницы
 
-- ![Внешний вид](https://sun1-98.userapi.com/impg/UvvzJgeF0RjqgB4EuJgos-Sz0VXrsVq78jNM5Q/eS8XvsaWjbY.jpg?size=1820x851&quality=96&sign=616011334642d05c9e67d4e4e964ad73&type=album)
+- ![Внешний вид](https://sun9-35.userapi.com/impg/feZW3EhU_7XnLSq4RvsPq9b2LpT4MUBGvtm0sA/pVm5ruMwvuU.jpg?size=1832x801&quality=96&sign=6e33a63f554c33d68d5532cea7ef4304&type=album)
 
 ## Вывод результата
 
-- отправляется запрос к api
-- ![Внешний вид](https://sun9-12.userapi.com/impg/oOcAGjU1PPwkC7FFBRONVX_36idjsz1ApaI3Fw/I8cvWpMzI1E.jpg?size=1360x570&quality=96&sign=5f73c38d500302062031dca4a829cb1c&type=album)
+- для первого задания отправляется запрос по адресу, а потом возвращается текст, который отображается в поле
+- ![Внешний вид](https://sun9-68.userapi.com/impg/yeQ-jdEmqydRAnFg-RcKIc4d7ai-zi6udX_maA/JsKCANRPzn8.jpg?size=1820x846&quality=96&sign=f020b74b7996ca327cc1e5ab73350fad&type=album)
 
-- результат
-- ![Внешний вид](https://sun1-98.userapi.com/impg/QA6J8RyVFXjW0wme7OvMfUnQKtd-fW1hnWSmSQ/D4mrCL_0xAQ.jpg?size=1180x845&quality=96&sign=24c8405c98ab275ada546bb6a018c163&type=album)
+- для 2 задания делается запрос к api и возвращается возраст по введенному имени
+- ![Внешний вид](https://sun9-69.userapi.com/impg/ENML5VzwbTBP9xG4AtAN9FgWVKJUwdNlceJgmg/gztbZHs76ac.jpg?size=1767x881&quality=96&sign=966a4d51068013179731869f38586fd7&type=album)
+## Вывод результата, когда введено пустое имя
 
-## Вывод результата, когда пользователи не найдены
+- сообщение об ошибке
 
-- кнопка блокируется, пользователю нужно перепроверить запрос
+- ![Внешний вид](https://sun9-53.userapi.com/impg/BdQCueFHWxnTUmaNVtkg04uIYe5rueuc3s7AIg/gnVyq1zQP5Q.jpg?size=1790x848&quality=96&sign=4d2d7f06a71831d590f6fb8c7cd98fc7&type=album)
 
-- ![Внешний вид](https://sun9-28.userapi.com/impg/HFxvkUHoWK4EILejh6KRpB70q2Czd-Qg0eYRCA/PnP7dH-yKBc.jpg?size=1047x648&quality=96&sign=d27b1dd64197d5e65048151b5773fb5e&type=album)
+## Вывод результата, когда имя введено повторно
 
-## Вывод результата, когда введен пустой запрос
+- ксообщение об ошибке
+- ![Внешний вид](https://sun9-19.userapi.com/impg/a-2cXKbKDKRmnlbebuTxVi5HdRywsx958cZ5sA/uDE2TPwSOzM.jpg?size=1790x823&quality=96&sign=8c88c178cba6880b4c73b3be6d5563b5&type=album)
 
-- кнопка блокируется, пользоавтелю нужно указать непустой запрос
-- ![Внешний вид](https://sun1-14.userapi.com/impg/6BDW9wv6vbEo55CIn2JKe3sx9Vx4JaojDglfzQ/_c60tVtQu6w.jpg?size=676x441&quality=96&sign=f30ff1f6cfdb9c4bf4721e5e065986be&type=album)
+## Обработка ошибки, когда пользоатель ввел не только буквы(валидация поля ввода имени)
 
-## Обработка ошибки, когда пользоатель, вводя данные, стер запрос и птается отправить его пустым
-
-- кнопка блокируется, предыдущий вывод плокируется, нужно ввести норм запрос
+- сообщение об ошибке
+- ![Внешний вид](https://sun9-17.userapi.com/impg/dgp1wb1y7fNm_-fZgqsSagicxX1reUdfvp0NhQ/9B8wcvKRx88.jpg?size=1733x816&quality=96&sign=972f7b99ec36c64b738fca75b9645b09&type=album)
