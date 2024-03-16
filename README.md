@@ -43,4 +43,4 @@ npm run dev
 ## Обработка ошибки, когда пользоатель ввел не только буквы(валидация поля ввода имени)
 
 - сообщение об ошибке
-- ![Внешний вид](https://sun9-17.userapi.com/impg/dgp1wb1y7fNm_-fZgqsSagicxX1reUdfvp0NhQ/9B8wcvKRx88.jpg?size=1733x816&quality=96&sign=972f7b99ec36c64b738fca75b9645b09&type=album)
+ ![Внешний вид](https://sun9-17.userapi.com/impg/dgp1wb1y7fNm_-fZgqsSagicxX1reUdfvp0NhQ/9B8wcvKRx88.jpg?size=1733x816&quality=96&sign=972f7b99ec36c64b738fca75b9645b09&type=album)
