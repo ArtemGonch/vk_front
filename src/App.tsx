@@ -1,13 +1,12 @@
-import { SearchForm } from "./components/SearchFrom/SearchForm";
-import { SearchResults } from "./components/SearchResults/SearchResults";
-import "./index.css"
+import { CatFactComponent } from './components/CatFactComponent/CatFactComponent';
+import { AgePredictionComponent } from './components/AgePredictionComponent/AgePredictionComponent';
 
 export default function App() {
-
   return (
     <div>
-        <SearchForm />
-        <SearchResults />
+      <CatFactComponent />
+      <AgePredictionComponent />
     </div>
   );
-}
+};
+
